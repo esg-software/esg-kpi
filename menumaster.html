@@ -1,0 +1,72 @@
+﻿<div class="logo">
+    <a href="home.html" class="simple-text">
+       KPI Tracker
+    </a>
+</div>
+<ul class="nav">
+    <li>
+        <a href="login.html">
+            <i class="pe-7s-graph"></i>
+            <p>Dashboard</p>
+        </a>
+    </li>
+    <li>
+        <a id="submissionlnk">
+            <i class="pe-7s-user"></i>
+            <p>Submissions</p>
+        </a>
+    </li>
+    <li>
+        <a href="approvalreminder.html">
+            <i class="pe-7s-user"></i>
+            <p>Review Reminder</p>
+        </a>
+    </li>
+    <li>
+        <a href="submissionreminder.html">
+            <i class="pe-7s-note2"></i>
+            <p>Submission Reminder</p>
+        </a>
+    </li>
+    <li>
+        <a href="department.html">
+            <i class="pe-7s-note2"></i>
+            <p>Department</p>
+        </a>
+    </li>
+    <li>
+        <a href="employees.html">
+            <i class="pe-7s-note2"></i>
+            <p>Employees</p>
+        </a>
+    </li>
+    <li>
+        <a href="sheets.html">
+            <i class="pe-7s-note2"></i>
+            <p>Sheets</p>
+        </a>
+    </li>
+    <li>
+        <a href="pendingemails.html">
+            <i class="pe-7s-note2"></i>
+            <p>Email Scheduled</p>
+        </a>
+    </li>
+
+</ul>
+
+<script>
+
+    $(document).ready(function () {
+        //adds menu.html content into any "#menu" element
+        var d = new Date();
+        var mntstrDate = (d.getMonth() + 1) + "/" + "1/" + d.getFullYear();
+        var todaysDate = (d.getMonth() + 1) + "/" + d.getDate()  +"/" + d.getFullYear();
+        $('#submissionlnk').attr("href", "submissions.html?currentDate=" + mntstrDate);    
+        //$('#todaysLink').attr("href", "submissions.html?currentDate=" + todaysDate);    
+        //$('#thisMonthLink').attr("href", "submissions.html?currentDate=" + mntstrDate); 
+        //$('#pendingApprovals').attr("href", "approvalreminder.html?currentDate=" + mntstrDate); 
+        //$('#emailsSchedule').attr("href", "#");
+    });
+
+</script>
