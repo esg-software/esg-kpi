@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<style>
+.hover_bkgr_fricc{
+    background:mediumaquamarine;
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #E6E6FA;
+    box-shadow: 2px 2px 10px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 500px;
+    min-height: 100px;
+    vertical-align: middle;
+    position: relative;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <iframe src="https://script.google.com/a/leminar.ae/macros/s/AKfycbwp4fxXhjN7Kk7bQhYznOwC4OeO93KqDUJmweGOgA/exec" width="480" height="320" seamless></iframe>
+
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+$(window).load(function () {
+   
+       $('.hover_bkgr_fricc').show();
+   
+  
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+</script>
