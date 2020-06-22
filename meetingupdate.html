@@ -80,12 +80,15 @@ background-repeat:no-repeat;
 
 <script>
 
-$(document).ready(function(){   
-     $('.hover_bkgr_fricc').show();
-    
+ $(window).load(function () {
+   
+       $('.hover_bkgr_fricc').show();
+   
     $('.popupCloseButton').click(function(){
-        window.close(); 
+        $('.hover_bkgr_fricc').hide();
+        window.close();
     });
-    });
+    
+});
    
 </script>
