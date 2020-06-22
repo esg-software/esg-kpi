@@ -73,7 +73,6 @@ background-repeat:no-repeat;
         <iframe src="https://script.google.com/a/leminar.ae/macros/s/AKfycbwp4fxXhjN7Kk7bQhYznOwC4OeO93KqDUJmweGOgA/exec" width="480" height="320" seamless></iframe>
 
     </div>
-    <button type="button" id="btnclose" onclick="closepage()">Close</button>
 </div>
 </body>
 </html>
@@ -85,6 +84,7 @@ $(window).load(function () {
     });
    function closepage() {
         $('.hover_bkgr_fricc').hide();
-        window.close();
+       window.opener.location.href="https://esg-software.github.io/esg-kpi/meeting.html";
+      window.top.close();
     };
 </script>
