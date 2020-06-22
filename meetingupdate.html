@@ -84,9 +84,12 @@ background-repeat:no-repeat;
 </html>
 
 <script>
-$(window).load(function () {
-   
-       $('.hover_bkgr_fricc').show();
+
+$(document).ready(function(){   
+     $('.hover_bkgr_fricc').show();
+    
+    $('.popupCloseButton').click(function(){
+        window.close(); 
     });
    
 </script>
